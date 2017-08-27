@@ -1,0 +1,130 @@
+$green: #98bd0e;
+
+body {
+	font-family:arial, times new roman;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+}
+
+.header {
+	width:100vw;
+	padding:1vh;
+	background-color:$green;
+	color:white;
+	h1 {
+		padding-left:20vw;
+	}
+	@media print {
+    display:none;
+  }
+}
+
+.content {
+	margin-left:20vw;
+	margin-right:20vw;
+	padding:1vw;
+	h3 {
+		text-align:center;
+	}
+	@media print {
+    width:100vw;
+		margin-left:0;
+		margin-right:0;
+  }
+	@media screen and (max-width:800px){
+		margin-left:0;
+		margin-right:0;
+		width:100%;
+	}
+}
+
+button {
+	background-color:$green;
+	color:white;
+	font-weight:bolder;
+	padding:5px;
+	border-radius:5px;
+}
+
+.inputform {
+	ul {
+		list-style:none;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		padding:0;
+		margin:0;
+		font-size:110%;
+	}
+	input, label, select {
+		padding:5px;
+		border-radius:5px;
+	}
+	margin-bottom:20px;
+	@media print {
+    display:none;
+  }
+}
+
+#resultlist {
+	font-size:12pt;
+	width:80%;
+	table-layout:fixed;
+	margin-right:auto;
+	margin-left:auto;
+	input {
+		padding:5px;
+		border-radius:5px;
+		@media screen and (max-width:800px){
+			width:80%;
+			padding:1px;
+		}
+	}
+	tr {
+		text-align:center;
+	}
+	td {
+		text-align:left;
+	}
+}
+
+#melding {
+	color:rgb(0,0,200);
+	padding:10px;
+}
+
+.antwoordveld {
+	display:block;
+	margin-top:5px;
+}
+
+#correctresult {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.goedeantwoord {
+	color:red;
+	margin-bottom:15px;
+	margin-top:5px;
+}
+
+.printbutton {
+	margin-top:20px;
+	text-align:center;
+	@media print {
+    display:none;
+  }
+}
+
+.footer {
+	margin-top:20px;
+	text-align:center;
+	font-size:10pt;
+	@media print {
+    display:none;
+  }
+}
