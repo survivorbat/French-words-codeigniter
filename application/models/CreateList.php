@@ -14,7 +14,7 @@ Class CreateList extends CI_Model
     $listwords = array();
     $overload=0;
     for($u=0;$u<$data['amount'];$u++){
-      $amount=0;
+      $amount=0; 
       while($amount==0){
         $overload++;
         if(min($hoofdstukken)==max($hoofdstukken)){
